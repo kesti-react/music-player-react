@@ -1,0 +1,77 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  box-shadow: 2px 2px 50px rgb(206, 206, 206);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  h2 {
+    padding: 2rem;
+  }
+}
+
+.library-song {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition:background 0.3s ease;
+  img {
+    width: 40%;
+  }
+  &:hover {
+    background: rgb(201, 183, 230);
+  }
+}
+.song-description {
+  padding-left: 1rem;
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* fix the ugly scrollbar */
+//only work on firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div::-webkit-scrollbar {
+  width: 5px;
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: transparent;
+  background-color: rgba(155, 155, 155, 0.5);
+}
+
+.selected {
+  background: rgb(164, 231, 138);
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+  background:#fff;
+}
+
+@media all and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
