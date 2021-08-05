@@ -12,9 +12,6 @@ const Library = ({ songs,setSongs, setCurrentSong , audioRef, isPlaying, library
             allSongs={songs}
             setSongs={setSongs}
             id = {song.id}
-            
-            
-           
             song={song}
             setCurrentSong={setCurrentSong}
             audioRef = {audioRef}

@@ -60,14 +60,6 @@ function musicList(){
         active:false,
         color:["#CCC4B1","#1E2225"],
         music:'../music/Happy-For-You.mp3'
-    },{
-        name:"Tie Me Down",
-        artist:"Gryffin ft. Elley Duhé",
-        cover:"https://i.scdn.co/image/ab67616d00001e022ebfbbd6e66e5bb54f30fb0f",
-        id: uuidv4(),
-        active:false,
-        color:["#00506C","#603446"],
-        music:'../music/Tie-Me-Down.mp3'
     }]
 }
 
